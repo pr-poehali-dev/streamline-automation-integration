@@ -29,7 +29,7 @@ export default function HomePage() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url("https://cdn.poehali.dev/projects/cf220c47-df54-4f13-a18e-b9e12a8daf0d/files/4c0e832e-51a2-4f86-9649-443b610ac997.jpg")`,
+            backgroundImage: `url("https://cdn.poehali.dev/projects/cf220c47-df54-4f13-a18e-b9e12a8daf0d/files/2f2f795f-e18a-45cb-b08c-25bb364b181c.jpg")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
