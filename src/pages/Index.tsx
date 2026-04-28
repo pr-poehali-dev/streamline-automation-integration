@@ -27,7 +27,7 @@ export default function HomePage() {
           }}
         />
         {/* Полупрозрачный оверлей для читаемости */}
-        <div className="absolute inset-0 bg-white/70" />
+        <div className="absolute inset-0 bg-white/40" />
 
         <div className="relative z-10 flex flex-col items-center justify-center flex-1 max-w-lg w-full">
           <div className="flex flex-col items-center space-y-4 mb-8">
