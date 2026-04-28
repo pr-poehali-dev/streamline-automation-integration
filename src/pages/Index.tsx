@@ -169,13 +169,13 @@ export default function HomePage() {
               +7 (906) 150-32-33
             </a>
             <a
-              href="https://wa.me/79061503233"
+              href="https://max.ru/+79061503233"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-white text-black px-7 py-4 border-[3px] border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
             >
               <Icon name="MessageCircle" size={20} />
-              WhatsApp
+              Max
             </a>
           </div>
         </div>
