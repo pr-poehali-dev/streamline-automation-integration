@@ -2,22 +2,29 @@ import { AnimatedRobot } from "@/components/AnimatedRobot"
 import { ChatPanel } from "@/components/ChatPanel"
 import { Dock } from "@/components/Dock"
 import { OSOverlay } from "@/components/OSOverlay"
+import Icon from "@/components/ui/icon"
 
-const SERVICES: Array<{ title: string; desc: string; tag: string; link?: string }> = [
-  { title: "ОСАГО", desc: "Обязательное страхование гражданской ответственности", tag: "Обязательно", link: "https://vk.com/away.php?to=https%3A%2F%2Fagentpolis.ru%2Fwidgets%2Fv2%2F91f41fdd0994634289a88e2f4b7f76b8534813ed%3Fmode%3Dreferral%26hasOsagoB2C%3D1&utf=1" },
-  { title: "КАСКО", desc: "Комплексная защита автомобиля от угона и повреждений", tag: "Популярно" },
-  { title: "Страхование здоровья", desc: "ДМС и страхование от несчастных случаев", tag: "Забота" },
-  { title: "Страхование недвижимости", desc: "Защита квартиры, дома и имущества", tag: "Надёжность" },
-  { title: "Страхование путешествий", desc: "Полис для поездок за рубеж и по России", tag: "Путешествия" },
-  { title: "Страхование бизнеса", desc: "Защита коммерческой собственности и ответственности", tag: "Бизнес" },
+const SERVICES: Array<{ title: string; desc: string; icon: string; link?: string }> = [
+  { title: "ОСАГО", desc: "Обязательный полис — оформлю быстро и выгодно", icon: "FileCheck", link: "https://vk.com/away.php?to=https%3A%2F%2Fagentpolis.ru%2Fwidgets%2Fv2%2F91f41fdd0994634289a88e2f4b7f76b8534813ed%3Fmode%3Dreferral%26hasOsagoB2C%3D1&utf=1" },
+  { title: "КАСКО", desc: "Полная защита авто от угона и повреждений", icon: "Car" },
+  { title: "Здоровье", desc: "ДМС и страхование от несчастных случаев", icon: "HeartPulse" },
+  { title: "Недвижимость", desc: "Квартира, дом, дача — от пожара и залива", icon: "Home" },
+  { title: "Путешествия", desc: "Полис для поездок по России и за рубеж", icon: "Plane" },
+  { title: "Бизнес", desc: "Защита коммерческой собственности и ответственности", icon: "Briefcase" },
+]
+
+const ADVANTAGES = [
+  { icon: "UserCheck", title: "Индивидуальный подход", desc: "Подбираю страховку под ваши задачи и бюджет" },
+  { icon: "Zap", title: "Быстрое оформление", desc: "Полис за 15 минут — без очередей и лишних бумаг" },
+  { icon: "ShieldCheck", title: "Надёжные компании", desc: "Работаю только с ведущими страховщиками России" },
+  { icon: "Headphones", title: "Поддержка при убытках", desc: "Помогу на всех этапах — от звонка до выплаты" },
 ]
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero — фиксированная высота */}
+      {/* HERO */}
       <div className="h-screen flex flex-col items-center justify-center p-8 relative overflow-hidden">
-        {/* Фоновое изображение */}
         <div
           className="absolute inset-0"
           style={{
@@ -26,14 +33,44 @@ export default function HomePage() {
             backgroundPosition: "center",
           }}
         />
-        {/* Полупрозрачный оверлей для читаемости */}
         <div className="absolute inset-0 bg-white/40" />
 
         <div className="relative z-10 flex flex-col items-center justify-center flex-1 max-w-lg w-full">
-          <div className="flex flex-col items-center space-y-4 mb-8">
+          <div className="flex flex-col items-center space-y-3 mb-6">
             <AnimatedRobot />
-            <h1 className="text-4xl font-black text-center">Ваш надёжный<br/>страховой агент</h1>
+            <h1 className="text-4xl font-black text-center leading-tight">Ваш надёжный<br/>страховой агент</h1>
+            <p className="text-center text-gray-700 font-medium text-lg">Подберу лучший полис — быстро, выгодно, без хлопот</p>
           </div>
+
+          {/* Быстрые CTA */}
+          <div className="flex gap-3 mb-6 flex-wrap justify-center">
+            <a
+              href="tel:+79061503233"
+              className="flex items-center gap-2 bg-[#FF2E63] text-white px-5 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-sm"
+            >
+              <Icon name="Phone" size={16} />
+              Позвонить
+            </a>
+            <a
+              href="https://wa.me/79061503233"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-white text-black px-5 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-sm"
+            >
+              <Icon name="MessageCircle" size={16} />
+              WhatsApp
+            </a>
+            <a
+              href="https://t.me/+79061503233"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-white text-black px-5 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-sm"
+            >
+              <Icon name="Send" size={16} />
+              Telegram
+            </a>
+          </div>
+
           <ChatPanel />
         </div>
 
@@ -42,66 +79,105 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Раздел услуг на главной */}
+      {/* ПРЕИМУЩЕСТВА */}
+      <div className="bg-[#FF2E63] px-6 py-12 relative">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {ADVANTAGES.map((a, i) => (
+              <div key={i} className="bg-white border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] p-5 flex flex-col items-start gap-2">
+                <div className="bg-[#FF2E63] p-2 border-[2px] border-black">
+                  <Icon name={a.icon} size={22} className="text-white" />
+                </div>
+                <h3 className="font-black text-sm leading-tight">{a.title}</h3>
+                <p className="text-xs text-gray-600 leading-snug">{a.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* УСЛУГИ */}
       <div className="bg-[#FAFAFA] px-6 py-16 relative">
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: `
-              linear-gradient(to right, #000 1px, transparent 1px),
-              linear-gradient(to bottom, #000 1px, transparent 1px)
-            `,
+            backgroundImage: `linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px)`,
             backgroundSize: "8px 8px",
           }}
         />
         <div className="relative z-10 max-w-5xl mx-auto">
-          <h2 className="text-4xl font-black mb-2 border-b-[3px] border-black pb-3">Услуги</h2>
-          <p className="text-gray-600 font-medium mb-8">Подберу оптимальный вариант под ваши задачи и бюджет</p>
+          <div className="mb-10">
+            <h2 className="text-4xl font-black border-b-[3px] border-black pb-3 mb-2">Все виды страхования</h2>
+            <p className="text-gray-600 font-medium">Найду оптимальные условия в ведущих страховых компаниях</p>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES.map((s, i) => (
               <div
                 key={i}
-                className="bg-white border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+                className="bg-white border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all p-6 flex flex-col gap-3"
               >
-                <div className="h-24 bg-gradient-to-br from-[#FF2E63] to-[#FF6B9D] border-b-[3px] border-black flex items-center justify-center">
-                  <span className="text-white font-black text-2xl">{s.title.split(" ")[0]}</span>
+                <div className="bg-[#FF2E63] w-12 h-12 border-[3px] border-black flex items-center justify-center flex-shrink-0">
+                  <Icon name={s.icon} size={22} className="text-white" />
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-black mb-1">{s.title}</h3>
-                  <p className="text-sm text-gray-700 mb-3">{s.desc}</p>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-xs font-bold bg-[#FF2E63] text-white px-2 py-1 border-[2px] border-black">
-                      {s.tag}
-                    </span>
-                    {s.link && (
-                      <a
-                        href={s.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-black bg-black text-white px-3 py-1 border-[2px] border-black hover:bg-[#FF2E63] transition-colors"
-                      >
-                        Оформить →
-                      </a>
-                    )}
-                  </div>
+                <div>
+                  <h3 className="text-xl font-black mb-1">{s.title}</h3>
+                  <p className="text-sm text-gray-700">{s.desc}</p>
                 </div>
+                {s.link ? (
+                  <a
+                    href={s.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-auto inline-block bg-[#FF2E63] text-white text-sm font-black px-4 py-2 border-[2px] border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
+                  >
+                    Оформить онлайн →
+                  </a>
+                ) : (
+                  <a
+                    href="tel:+79061503233"
+                    className="mt-auto inline-block bg-black text-white text-sm font-black px-4 py-2 border-[2px] border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
+                  >
+                    Узнать стоимость →
+                  </a>
+                )}
               </div>
             ))}
           </div>
+        </div>
+      </div>
 
-          <div className="mt-10 text-center">
+      {/* CTA BANNER */}
+      <div className="bg-black px-6 py-14">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-black text-white mb-3">Не знаете, что выбрать?</h2>
+          <p className="text-gray-400 font-medium mb-8 text-lg">Позвоните или напишите — бесплатно проконсультирую и подберу лучший вариант за 15 минут</p>
+          <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="tel:+79061503233"
-              className="inline-block bg-[#FF2E63] text-white px-8 py-4 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
+              className="flex items-center gap-2 bg-[#FF2E63] text-white px-7 py-4 border-[3px] border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
             >
-              Получить консультацию — +7 (906) 150-32-33
+              <Icon name="Phone" size={20} />
+              +7 (906) 150-32-33
+            </a>
+            <a
+              href="https://wa.me/79061503233"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-white text-black px-7 py-4 border-[3px] border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
+            >
+              <Icon name="MessageCircle" size={20} />
+              WhatsApp
             </a>
           </div>
         </div>
       </div>
 
-      {/* OS Overlay */}
+      {/* ФУТЕР */}
+      <div className="bg-[#111] px-6 py-6 text-center">
+        <p className="text-gray-500 text-sm font-medium">Страховой агент · +7 (906) 150-32-33 · WhatsApp / Telegram / Max</p>
+      </div>
+
       <OSOverlay />
     </>
   )
