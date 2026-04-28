@@ -1,6 +1,6 @@
 export function MiniAppArt() {
-  const services = [
-    { title: "ОСАГО", desc: "Обязательное страхование гражданской ответственности", tag: "Обязательно" },
+  const services: Array<{ title: string; desc: string; tag: string; link?: string }> = [
+    { title: "ОСАГО", desc: "Обязательное страхование гражданской ответственности", tag: "Обязательно", link: "https://vk.com/away.php?to=https%3A%2F%2Fagentpolis.ru%2Fwidgets%2Fv2%2F91f41fdd0994634289a88e2f4b7f76b8534813ed%3Fmode%3Dreferral%26hasOsagoB2C%3D1&utf=1" },
     { title: "КАСКО", desc: "Комплексная защита автомобиля от угона и повреждений", tag: "Популярно" },
     { title: "Страхование здоровья", desc: "ДМС и страхование от несчастных случаев", tag: "Забота" },
     { title: "Страхование недвижимости", desc: "Защита квартиры, дома и имущества", tag: "Надёжность" },
@@ -26,9 +26,21 @@ export function MiniAppArt() {
                 <h3 className="text-lg font-black">{s.title}</h3>
               </div>
               <p className="text-sm text-gray-700 mb-2">{s.desc}</p>
-              <span className="inline-block text-xs font-bold bg-[#FF2E63] text-white px-2 py-1 border-[2px] border-black">
-                {s.tag}
-              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-block text-xs font-bold bg-[#FF2E63] text-white px-2 py-1 border-[2px] border-black">
+                  {s.tag}
+                </span>
+                {s.link && (
+                  <a
+                    href={s.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-xs font-black bg-black text-white px-3 py-1 border-[2px] border-black hover:bg-[#FF2E63] transition-colors"
+                  >
+                    Оформить →
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
