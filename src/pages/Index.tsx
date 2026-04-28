@@ -16,25 +16,18 @@ export default function HomePage() {
   return (
     <>
       {/* Hero — фиксированная высота */}
-      <div className="h-screen bg-[#FAFAFA] flex flex-col items-center justify-center p-8 relative overflow-hidden">
-        {/* Neo-brutal grid background */}
+      <div className="h-screen flex flex-col items-center justify-center p-8 relative overflow-hidden">
+        {/* Фоновое изображение */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0"
           style={{
-            backgroundImage: `
-              linear-gradient(to right, #000 1px, transparent 1px),
-              linear-gradient(to bottom, #000 1px, transparent 1px)
-            `,
-            backgroundSize: "8px 8px",
+            backgroundImage: `url("https://cdn.poehali.dev/projects/cf220c47-df54-4f13-a18e-b9e12a8daf0d/bucket/3adb55d6-4352-417e-b279-f67db44ba35f.jpg")`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         />
-        {/* Subtle grain texture */}
-        <div
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-          }}
-        />
+        {/* Полупрозрачный оверлей для читаемости */}
+        <div className="absolute inset-0 bg-white/70" />
 
         <div className="relative z-10 flex flex-col items-center justify-center flex-1 max-w-lg w-full">
           <div className="flex flex-col items-center space-y-4 mb-8">
