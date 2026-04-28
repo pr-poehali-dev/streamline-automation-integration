@@ -2,6 +2,7 @@ import { AnimatedRobot } from "@/components/AnimatedRobot"
 import { ChatPanel } from "@/components/ChatPanel"
 import { Dock } from "@/components/Dock"
 import { OSOverlay } from "@/components/OSOverlay"
+import { LeadForm } from "@/components/LeadForm"
 import Icon from "@/components/ui/icon"
 
 const SERVICES: Array<{ title: string; desc: string; icon: string; link?: string }> = [
@@ -144,6 +145,13 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* ФОРМА ЗАЯВКИ */}
+      <div className="bg-[#FAFAFA] px-6 py-16 border-t-[3px] border-black">
+        <div className="max-w-xl mx-auto">
+          <LeadForm />
         </div>
       </div>
 

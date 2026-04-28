@@ -1,0 +1,27 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "POST lead",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "Иван Иванов", "phone": "+79001234567", "service": "ОСАГО"},
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "GET leads",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"leads": []},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
