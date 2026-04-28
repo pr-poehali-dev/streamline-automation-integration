@@ -53,13 +53,13 @@ export default function HomePage() {
               Позвонить
             </a>
             <a
-              href="https://wa.me/79061503233"
+              href="https://max.ru/+79061503233"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-white text-black px-5 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-sm"
             >
               <Icon name="MessageCircle" size={16} />
-              WhatsApp
+              Max
             </a>
             <a
               href="https://t.me/+79061503233"
