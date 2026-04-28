@@ -5,30 +5,37 @@ export function MiniAppAbout() {
 
       <div className="space-y-6">
         <div className="bg-white p-6 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-          <h3 className="text-2xl font-black mb-4">Привет, я Алекс Нова!</h3>
+          <h3 className="text-2xl font-black mb-4">Профессиональный страховой агент</h3>
           <p className="text-lg leading-relaxed mb-4">
-            Я креативный разработчик, который любит создавать важные вещи. Работаю на стыке дизайна и
-            технологий, создаю продукты, которые красивы и функциональны.
+            Помогаю клиентам надёжно защитить автомобиль, здоровье и недвижимость. Подбираю оптимальные
+            страховые пакеты с учётом ваших потребностей и бюджета — без лишних переплат.
           </p>
           <p className="text-lg leading-relaxed">
-            Когда не пишу код, изучаю новые формы искусства, пишу о технологиях и экспериментирую с
-            AI и креативными инструментами.
+            Работаю с ведущими страховыми компаниями России, поэтому всегда нахожу выгодные условия
+            для каждого клиента. Быстро оформляю документы и помогаю при урегулировании убытков.
           </p>
         </div>
 
         <div className="bg-white p-6 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-          <h3 className="text-2xl font-black mb-4">Навыки и интересы</h3>
+          <h3 className="text-2xl font-black mb-4">Мои преимущества</h3>
           <div className="flex flex-wrap gap-2">
-            {["React", "Next.js", "TypeScript", "AI/ML", "Дизайн-системы", "Креативный код", "Тексты", "Арт"].map(
-              (skill) => (
-                <span
-                  key={skill}
-                  className="bg-[#FF2E63] text-white px-3 py-1 border-[2px] border-black font-bold text-sm"
-                >
-                  {skill}
-                </span>
-              ),
-            )}
+            {[
+              "Индивидуальный подход",
+              "Помощь с документами",
+              "Выгодные условия",
+              "Быстрое урегулирование",
+              "ОСАГО",
+              "КАСКО",
+              "Страхование здоровья",
+              "Страхование недвижимости",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="bg-[#FF2E63] text-white px-3 py-1 border-[2px] border-black font-bold text-sm"
+              >
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
       </div>
