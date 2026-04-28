@@ -8,7 +8,7 @@ export function MiniAppResume() {
           <h3 className="text-2xl font-black mb-4">Почему выбирают меня</h3>
 
           <div className="space-y-4">
-            <div className="border-l-[4px] border-[#FF2E63] pl-4">
+            <div className="border-l-[4px] border-[#16a34a] pl-4">
               <h4 className="text-xl font-bold">Индивидуальный подход</h4>
               <p className="mt-2">
                 Анализирую ваши потребности и бюджет, чтобы предложить именно тот страховой пакет,
@@ -16,7 +16,7 @@ export function MiniAppResume() {
               </p>
             </div>
 
-            <div className="border-l-[4px] border-[#FF2E63] pl-4">
+            <div className="border-l-[4px] border-[#16a34a] pl-4">
               <h4 className="text-xl font-bold">Помощь в оформлении документов</h4>
               <p className="mt-2">
                 Беру на себя всю бумажную работу: помогаю собрать документы, оформить полис
@@ -24,7 +24,7 @@ export function MiniAppResume() {
               </p>
             </div>
 
-            <div className="border-l-[4px] border-[#FF2E63] pl-4">
+            <div className="border-l-[4px] border-[#16a34a] pl-4">
               <h4 className="text-xl font-bold">Выгодные условия от ведущих компаний</h4>
               <p className="mt-2">
                 Сотрудничаю с топовыми страховщиками России — сравниваю предложения и выбираю
@@ -32,7 +32,7 @@ export function MiniAppResume() {
               </p>
             </div>
 
-            <div className="border-l-[4px] border-[#FF2E63] pl-4">
+            <div className="border-l-[4px] border-[#16a34a] pl-4">
               <h4 className="text-xl font-bold">Быстрое урегулирование убытков</h4>
               <p className="mt-2">
                 При наступлении страхового случая поддерживаю на всех этапах — от уведомления

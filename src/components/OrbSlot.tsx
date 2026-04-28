@@ -12,7 +12,7 @@ export function OrbSlot({ className = "", size = "lg" }: OrbSlotProps) {
 
   return (
     <div
-      className={`${sizeClasses[size]} rounded-full bg-gradient-to-br from-[#FF2E63] to-[#FF6B9D] border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] ${className}`}
+      className={`${sizeClasses[size]} rounded-full bg-gradient-to-br from-[#16a34a] to-[#15803d] border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] ${className}`}
       role="img"
       aria-label="AI Assistant Orb"
     >

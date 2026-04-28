@@ -18,7 +18,7 @@ export function MiniAppArt() {
             key={i}
             className="bg-white border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all cursor-pointer"
           >
-            <div className="aspect-square bg-gradient-to-br from-[#FF2E63] to-[#FF6B9D] border-b-[3px] border-black flex items-center justify-center">
+            <div className="aspect-square bg-gradient-to-br from-[#16a34a] to-[#15803d] border-b-[3px] border-black flex items-center justify-center">
               <span className="text-white font-black text-2xl">{s.title.split(" ")[0]}</span>
             </div>
             <div className="p-4">
@@ -27,7 +27,7 @@ export function MiniAppArt() {
               </div>
               <p className="text-sm text-gray-700 mb-2">{s.desc}</p>
               <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-block text-xs font-bold bg-[#FF2E63] text-white px-2 py-1 border-[2px] border-black">
+                <span className="inline-block text-xs font-bold bg-[#16a34a] text-white px-2 py-1 border-[2px] border-black">
                   {s.tag}
                 </span>
                 {s.link && (
@@ -35,7 +35,7 @@ export function MiniAppArt() {
                     href={s.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-xs font-black bg-black text-white px-3 py-1 border-[2px] border-black hover:bg-[#FF2E63] transition-colors"
+                    className="inline-block text-xs font-black bg-black text-white px-3 py-1 border-[2px] border-black hover:bg-[#16a34a] transition-colors"
                   >
                     Оформить →
                   </a>
@@ -49,7 +49,7 @@ export function MiniAppArt() {
       <div className="mt-8 text-center">
         <a
           href="tel:+79061503233"
-          className="inline-block bg-[#FF2E63] text-white px-6 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
+          className="inline-block bg-[#16a34a] text-white px-6 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
         >
           Получить консультацию
         </a>

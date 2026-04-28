@@ -31,7 +31,7 @@ export function MiniAppAbout() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-[#FF2E63] text-white px-3 py-1 border-[2px] border-black font-bold text-sm"
+                className="bg-[#16a34a] text-white px-3 py-1 border-[2px] border-black font-bold text-sm"
               >
                 {skill}
               </span>

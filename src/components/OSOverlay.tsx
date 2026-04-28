@@ -63,7 +63,7 @@ export function OSOverlay() {
           <PersonaToggle />
           <Button
             onClick={closeOS}
-            className="w-10 h-10 p-0 bg-[#FF2E63] text-white border-[3px] border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] transition-all focus:ring-4 focus:ring-[#FF2E63]"
+            className="w-10 h-10 p-0 bg-[#16a34a] text-white border-[3px] border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] transition-all focus:ring-4 focus:ring-[#16a34a]"
             aria-label="Закрыть"
           >
             <X size={16} />
@@ -83,9 +83,9 @@ export function OSOverlay() {
                 <Button
                   key={key}
                   onClick={() => setActiveApp(key)}
-                  className={`w-full justify-start gap-3 h-12 border-[3px] border-black font-bold text-left transition-all focus:ring-4 focus:ring-[#FF2E63] ${
+                  className={`w-full justify-start gap-3 h-12 border-[3px] border-black font-bold text-left transition-all focus:ring-4 focus:ring-[#16a34a] ${
                     isActive
-                      ? "bg-[#FF2E63] text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+                      ? "bg-[#16a34a] text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
                       : "bg-white text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px]"
                   }`}
                 >

@@ -47,7 +47,7 @@ export default function HomePage() {
           <div className="flex gap-3 mb-6 flex-wrap justify-center">
             <a
               href="tel:+79061503233"
-              className="flex items-center gap-2 bg-[#FF2E63] text-white px-5 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-sm"
+              className="flex items-center gap-2 bg-[#16a34a] text-white px-5 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-sm"
             >
               <Icon name="Phone" size={16} />
               Позвонить
@@ -81,12 +81,12 @@ export default function HomePage() {
       </div>
 
       {/* ПРЕИМУЩЕСТВА */}
-      <div className="bg-[#FF2E63] px-6 py-12 relative">
+      <div className="bg-[#16a34a] px-6 py-12 relative">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {ADVANTAGES.map((a, i) => (
               <div key={i} className="bg-white border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] p-5 flex flex-col items-start gap-2">
-                <div className="bg-[#FF2E63] p-2 border-[2px] border-black">
+                <div className="bg-[#16a34a] p-2 border-[2px] border-black">
                   <Icon name={a.icon} size={22} className="text-white" />
                 </div>
                 <h3 className="font-black text-sm leading-tight">{a.title}</h3>
@@ -118,7 +118,7 @@ export default function HomePage() {
                 key={i}
                 className="bg-white border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all p-6 flex flex-col gap-3"
               >
-                <div className="bg-[#FF2E63] w-12 h-12 border-[3px] border-black flex items-center justify-center flex-shrink-0">
+                <div className="bg-[#16a34a] w-12 h-12 border-[3px] border-black flex items-center justify-center flex-shrink-0">
                   <Icon name={s.icon} size={22} className="text-white" />
                 </div>
                 <div>
@@ -130,7 +130,7 @@ export default function HomePage() {
                     href={s.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-auto inline-block bg-[#FF2E63] text-white text-sm font-black px-4 py-2 border-[2px] border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
+                    className="mt-auto inline-block bg-[#16a34a] text-white text-sm font-black px-4 py-2 border-[2px] border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
                   >
                     Оформить онлайн →
                   </a>
@@ -163,7 +163,7 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="tel:+79061503233"
-              className="flex items-center gap-2 bg-[#FF2E63] text-white px-7 py-4 border-[3px] border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
+              className="flex items-center gap-2 bg-[#16a34a] text-white px-7 py-4 border-[3px] border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
             >
               <Icon name="Phone" size={20} />
               +7 (906) 150-32-33

@@ -38,7 +38,7 @@ export function AnimatedRobot({ className = "", size = "lg" }: AnimatedRobotProp
       indicator.style.background = "#ffffff"
       indicator.style.boxShadow = "0 0 10px rgba(255, 255, 255, 0.8)"
       setTimeout(() => {
-        indicator.style.background = "#FF2E63"
+        indicator.style.background = "#16a34a"
         indicator.style.boxShadow = "none"
       }, 200)
     })

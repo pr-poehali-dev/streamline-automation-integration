@@ -34,7 +34,7 @@ export function MiniAppWritings() {
           >
             <div className="flex justify-between items-start mb-1">
               <h3 className="text-xl font-black">{c.title}</h3>
-              <span className="text-sm font-bold bg-[#FF2E63] text-white px-2 py-1 border-[2px] border-black">
+              <span className="text-sm font-bold bg-[#16a34a] text-white px-2 py-1 border-[2px] border-black">
                 {c.hint}
               </span>
             </div>
@@ -46,7 +46,7 @@ export function MiniAppWritings() {
       <div className="mt-8 text-center">
         <a
           href="tel:+79061503233"
-          className="inline-block bg-[#FF2E63] text-white px-6 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
+          className="inline-block bg-[#16a34a] text-white px-6 py-3 border-[3px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all font-black text-lg"
         >
           Позвонить сейчас
         </a>
